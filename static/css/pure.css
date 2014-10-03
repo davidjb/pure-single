@@ -13,6 +13,12 @@ a:focus {
     text-decoration: underline;
 }
 
+#search {
+    letter-spacing: 1px;
+}
+#tipue_search_content {
+    margin-left: 55px;
+}
 
 .comments {
     padding: 50px 0 0;

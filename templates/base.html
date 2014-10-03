@@ -33,6 +33,11 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     {% block head_js %}{% endblock %}
+
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css">
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.js"></script>
+
 </head>
 
 <body>
@@ -71,6 +76,12 @@
                 </div>
             </div>
         </div>
+        <div id="search">
+            <form action="{{ SITEURL }}">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content"></div>
+        </div>
         {% block content %}
         {% endblock %}
     </div>
@@ -99,5 +110,16 @@
         });
     </script>
     {% include 'analytics.html' %}
+
+    <script>
+    $(document).ready(function() {
+         $('#tipue_search_input').tipuesearch({
+              'show': 6,
+              'mode': 'json',
+              'contentLocation': 'tipuesearch_content.json'
+         });
+    });
+    </script>
+
 </body>
 </html>
