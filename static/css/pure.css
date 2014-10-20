@@ -13,13 +13,6 @@ a:focus {
     text-decoration: underline;
 }
 
-#search {
-    letter-spacing: 1px;
-}
-#tipue_search_content {
-    margin-left: 55px;
-}
-
 .comments {
     padding: 50px 0 0;
 }
@@ -49,7 +42,6 @@ pre {
     width: 100px;
     height: 100px;
     border-radius: 50px;
-    margin-left: 1em;
     border: 3px solid #fff;
     z-index: 500;
     background-color: #fff;
@@ -115,12 +107,12 @@ pre {
     text-align: center;
     width: 767px;
     max-width: 100%;
+    margin-bottom: 15px;
 }
 
 .brand-main a {
     text-transform: uppercase;
     text-decoration: none;
-    margin-left: 15px;
     font-size: 25px;
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -131,18 +123,18 @@ pre {
 .tagline {
     margin-top: -15px;
     line-height: 15px;
-    margin-left: 15px;
     font-size: 80%;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     color: #fff;
+    padding: 0 1em;
 }
 
 .social {
     display: inline-block;
+    margin: 0;
 }
 .social a {
     text-decoration: none;
-    margin-left: 15px;
     text-shadow: 0 1px 3px rgba(0,0,0,0.3);
     color: #fff;
 }
@@ -279,7 +271,7 @@ pre {
         width: 100%;
         position: relative;
         margin: 0;
-        height: 450px;
+        height: 250px;
     }
     .content {
         padding: 1em 1.5em 0;
@@ -292,7 +284,7 @@ pre {
     }
 
     .cover-body {
-        padding-bottom: 5%;
+        padding-bottom: 0;
         padding-top: 0;
     }
 
@@ -312,4 +304,33 @@ pre {
     .cover-img {
         background-position: 0;
     }
+}
+
+/* Customisations */
+#search {
+    letter-spacing: 1px;
+}
+#tipue_search_content {
+    margin-left: 55px !important;
+}
+.nav-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.nav-item {
+    display: inline-block;
+}
+.nav-item a {
+    background: none repeat scroll 0 0 transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    font-size: 85%;
+    letter-spacing: 0.05em;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+.nav-item a:hover, .nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
 }

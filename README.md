@@ -4,6 +4,15 @@ Pure Single
 [Blogging theme](http://purepelican.com) based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
 Theme is responsive.
 
+## Customisations
+
+* Customise CSS (smaller margins)
+* Add Tipue Search support
+* Upgrade Purecss version
+* Add site pages to the sidebar
+* Fix pygments CSS to work with code blocks
+* Ensure pygments CSS gets delivered to all pages
+
 ## PELICANCONF.PY
 
 * `COVER_IMG_URL` - Set the sidebar image (Optional).
