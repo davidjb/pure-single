@@ -230,7 +230,6 @@ pre {
     font-size: 80%;
     text-align: center;
     position: relative;
-    width: 450px;
     margin: 0 auto;
     max-width: 100%;
 }
@@ -271,7 +270,8 @@ pre {
         width: 100%;
         position: relative;
         margin: 0;
-        height: 250px;
+        height: 180px;
+        font-size: 80%;
     }
     .content {
         padding: 1em 1.5em 0;
@@ -333,4 +333,21 @@ pre {
 .nav-item a:hover, .nav-item a:focus {
     border: 2px solid rgb(61, 146, 201);
     text-decoration: none;
+}
+@media (max-width: 767px) {
+    .brand-main {
+        margin: 0;
+    }
+    .avatar {
+        height: 64px;
+        width: 64px;
+        float: left;
+    }
+    .tagline {
+        margin-top: 0;
+    }
+    .fa-3x {
+        font-size: 2em;
+    }
+
 }
