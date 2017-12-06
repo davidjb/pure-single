@@ -6,9 +6,10 @@ Theme is responsive.
 
 ## Customisations
 
+* Add Tipue Search support (v6.1 with a fix for
+  https://github.com/Tipue/Tipue-Search/issues/69)
+* Upgrade versions for Purecss, Font-Awesome, jQuery
 * Customise CSS (smaller margins)
-* Add Tipue Search support
-* Upgrade Purecss version
 * Add site pages to the sidebar
 * Fix pygments CSS to work with code blocks
 * Ensure pygments CSS gets delivered to all pages
