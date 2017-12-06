@@ -28,10 +28,12 @@
                             <h3><a class="post-title" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
                             <p class="post-meta">{{ article.summary }}</p>
                         {% if HIDE_CATEGORIES %}
+                          {% if article.tags %}
                             <p class="post-meta">// under {% for tag in article.tags %}
                                 <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                                 {% endfor %} &middot; {{ article.locale_date }}
                             </p>
+                          {% endif %}
                         {% else %}
                             <p class="post-meta">
                                 in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> &middot; {{ article.locale_date }}
