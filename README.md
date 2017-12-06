@@ -1,5 +1,4 @@
-Pure Single
-===========
+# Pure Single
 
 [Blogging theme](http://purepelican.com) based on [Purecss](http:purecss.io) for [Pelican](http://docs.getpelican.com/) blogs.
 Theme is responsive.
@@ -26,7 +25,7 @@ Theme is responsive.
 * `PIWIK_URL` and `PIWIK_SITE_ID` - Set the URL and site-id for Piwik tracking. (Without 'http://')
 * `SOCIAL` - Set some social links in the sidebar. The format should be like this:
 
-    ```python
+    ```
     SOCIAL = (
         ('github', 'https://github.com/example/'),
         ('twitter-square', 'https://twitter.com/example'),
