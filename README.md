@@ -5,8 +5,7 @@ Theme is responsive.
 
 ## Customisations
 
-* Add Tipue Search support (v6.1 with a fix for
-  https://github.com/Tipue/Tipue-Search/issues/69)
+* Add Tipue Search support
 * Upgrade versions for Purecss, Font-Awesome, jQuery
 * Customise CSS (smaller margins)
 * Add site pages to the sidebar

@@ -35,7 +35,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     {% block head_js %}{% endblock %}
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Tipue/Tipue-Search/e14a5b69783070d3e807487663412d58318e65ee/tipuesearch/css/tipuesearch.css">
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css">
 
 </head>
 
@@ -82,7 +82,7 @@
         </div>
         <div id="search">
             <form id="search_form" action="{{ SITEURL }}">
-                <div class="tipue_search_left" style="padding: 15px 5px"><img src="https://cdn.rawgit.com/Tipue/Tipue-Search/e14a5b69783070d3e807487663412d58318e65ee/tipuesearch/search.png" class="tipue_search_icon"></div>
+                <div class="tipue_search_left" style="padding: 15px 5px">&#9906;</div>
                 <div class="tipue_search_right"><input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" list="search" required placeholder="Search"></div>
                 <div style="clear: both;"></div>
             </form>
@@ -117,8 +117,8 @@
     </script>
     {% include 'analytics.html' %}
 
-    <script type="text/javascript" src="https://cdn.rawgit.com/Tipue/Tipue-Search/e14a5b69783070d3e807487663412d58318e65ee/tipuesearch/tipuesearch_set.js"></script>
-    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch.fixed.js"></script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
     <script>
     $('#tipue_search_input').tipuesearch({
         'mode' : 'json',
