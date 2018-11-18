@@ -120,13 +120,13 @@
     <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
     <script type="text/javascript" src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
     <script>
-    $('#tipue_search_input').tipuesearch({
-        'mode' : 'json',
-        'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
-    });
-    $('#search_form').on('submit', function(event) {
-        event.preventDefault()
-    })
+        $.getJSON('{{ SITEURL }}/tipuesearch_content.json', function(data) {
+          window.tipuesearch = data
+          $('#tipue_search_input').tipuesearch()
+          $('#search_form').on('submit', function(event) {
+            event.preventDefault()
+          })
+        })
     </script>
 
 </body>
